@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat city Registration</title>
+</head>
+<body>
+    <h1>Cat City ID Registration</h1>
+    <img src="./z2926234739984_a1b8fd2b7aff594a08503ceb1571cf8f.jpg" alt="Cat photo">
+    <form action="">
+       Name: <br><br>
+       <input type="text" name="cat-name">
+       <br><br>
+       Age: <br><br>
+       <input type="number" name="cat-age">
+       <br><br>
+        Gender: <br><br>
+        <input type="radio" name="cat-gender" value="male"> Male
+        <input type="radio" name="cat-gender" value="Female"> Female
+        <input type="radio" name="cat-gender" value="Other"> Other
+        <br> <br>
+        Fur Color: <br><br>
+        <input type="radio" name="cat-color" value="Đỏ"> Đỏ
+        <input type="radio" name="cat-color" value="Xanh"> Xanh
+        <input type="radio" name="cat-color" value="Khác"> Khác
+        <br><br>
+        Favorite Activities: <br><br>
+        <input type="checkbox" name="cat-favorite-activities" value="eat"> eat
+        <input type="checkbox" name="cat-favorite-activities" value="drink-milk"> Drink drink-milk
+        <input type="checkbox" name="cat-favorite-activites" value="sleep"> sleep
+        <br><br>
+        Cat doesn't love to:
+        <input type="checkbox" name="cat-hates" value="Bath"> Bath
+        <input type="checkbox" name="cat-hates" value="Hug">Hug
+        <br><br>
+        Cat Breed: <br>
+        <select name="cat-breed" >
+            <option value="Siamese">Siamese</option>
+            <option value="Persian">Persian></option>
+            <option value="Maine Coon">Maine Coon</option>
+            <option value="Ragdoll">Ragdoll</option>
+            <option value="Bengal">Bengal</option>
+        </select>
+        <br><br>
+        Cat ID: <br>
+        <input type="password"><br>
+        <br>
+        Other information: <br>
+        <textarea name="cat-other-information"></textarea>
+        <br><br>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Finish">
+
+    </form>
+    <!--input type = "number" chỉ được nhập số
+        input type = "radio" chỉ chọn 1 trong nhiều lựa chọn
+        Muốn chọn lựa chọn 1, không thể chọn cùng lúc lựa chọn 2,3 thì cần đặt chúng 1 trường name giống nhau name="cat-gender" 
+        Tuy nhiên để biết người dụng chọn cái nào thì cần thêm trường value="" để xác định người dụng chọn vào cái nào
+        input type = "checkbox" chọn được nhiều lựa chọn cùng lúc
+        select -> chọn 1 trong danh sách nhiều lựa chọn, ví dụ tỉnh thành trong cả nước
+        input type="password" -> nội dung nhập vào được ẩn đi
+        textarea-> nhập đoạn nội dung văn bản dài
+        <input type="reset" value="Reset">-> xóa hết dữ liệu trong form để điền lại
+    -->
+</body>
+</html>
