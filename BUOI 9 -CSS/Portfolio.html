@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang Van Linh</title>
+    <style>
+        body{
+            background-color:#02B796;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            /* sans-serif chọn chữ không chân*/
+            
+        }
+        h2{
+            background-color: yellow;/* nền chữ*/
+            text-decoration: underline;/*gạch chân*/
+            font-style: italic;/*in nghiêng*/
+        }
+        h3{
+            color: white;
+            letter-spacing: 5px; /*khoảng cách giữa các chữ*/          
+
+           }
+        .skill-item{
+            line-height: 30px;/*độ cao dòng*/
+
+        }
+        ol>li{
+            margin-left: 50px;/*khoảng cách thụt vào đầu dòng*/
+            
+        }
+        ul {
+            list-style-type: square;/*ký hiệu vuông, tròn đầu mỗi dòng*/
+            /* text-decoration: circle;*/
+            list-style-position: inside;
+            /* lùi đầu dòng so với tiêu đề*/
+            list-style-image: ;
+            /*sử dụng icon để đánh dấu dòng*/
+
+        }
+        table{
+            border-collapse:collapse ;
+            /* loại bỏ các đường viền trùng lặp*/
+            width: 50%;/*50% độ dài thẻ cha body*/
+
+        }
+
+        table, th,td {
+            border: 2px dashed #FFC300;
+
+        }
+        th,td {
+            line-height: 30px;
+            /*tăng khoảng cách dòng, chiều cao dòng*/
+        }
+        .profile-image{
+            height: auto;
+            width: 200px;
+            border-radius:10%;
+        }/*sử dụng . trước class*/
+        #web-title{
+            color: tomato;
+            padding-left: 35%;/*các lề trái 35% chiều rộng thẻ cha body*/
+
+        }/*đặt dấu # trước id*/
+
+    </style>
+</head>
+<body>
+    <h1 id="web-title">Dang Van Linh portfolio</h1>
+    <h2>Personal Imformation</h2>
+    <h3>Full name</h3>
+    <p>Dang Van Linh</p>
+    <!--    Cấu trúc html -->
+    <img src="./images/19.jpg" alt="ảnh đại diện" class="profile-image">
+    <!-- gõ ./ sẽ hiện ra thư mục cùng cấp dẫn về file ảnh-->
+    <h3>Địa chỉ</h3>
+    <p>Da Nang </p>
+    <h3>Phone</h3>
+    <p>0935509778</p>
+    <h3>Email</h3>
+    <p>Vanlinh08mt1@gmail.com</p>
+    <h3>Liên hệ</h3>
+    <p>Facbook: <a href="https://www.facebook.com/" target="_blank">Click here</a></p>
+    
+    <!--<a href=""></a>
+        <a href="https://www.facebook.com/" target="_blank">Facebook link</a>
+        Thẻ a thẻ chứa link trong href, nội dung hiển thị tùy ý ghi giữa thẻ a
+        Target="_blank"-> kích vào đường dẫn mở tab mới trên trình duyệt
+        Target="_self"-> mở trên chính trình duyệt hiện tại
+     -->
+
+    <!--   ul-> unorderlist tạo danh sách không đánh thứ tự
+        ol_> order list tạo danh sách có đánh thứ tự
+        li-> list item
+    -->
+    <p>Link google:<a href="https://www.google.com/" target="_blank">Click here</a></p>
+    <!--có thể lông thẻ a trong thẻ p-->
+    <h2>Skills</h2>
+    <ul style="list-style-type:square;"> 
+        <!--stype="list-style-type:square:"-> ký tự đầy dòng chấm vuông,
+            stype="list-style-type:circle:"-> ký tự đầy dòng chấm tròn,
+        -->
+        <li class="skill-item">English</li>
+        <li class="skill-item">Code</li>
+        <li class="skill-item">Sing</li>
+    </ul>
+
+    <h2>Lesson1 </h2>
+    <ol  type="1">
+        <li>Overview:Internet</li>
+        <li>VScode and Github</li>
+        <li>UI/UX Design</li>
+        <li>HTML structure</li>
+    </ol>
+    <!-- type=1 theo thứ tự số -->
+    <h2>Lesson2</h2>
+    <ol  type="a">
+        <li>Overview:Internet</li>
+        <li>VScode and Github</li>
+        <li>UI/UX Design</li>
+        <li>HTML structure</li>
+    </ol>
+    <!--type="a" sắp xếp thep thứ tự a,b,c,d-->
+    <h2>Lesson3</h2>
+    <ol  type="A">
+        <li>Overview:Internet</li>
+        <li>VScode and Github</li>
+        <li>UI/UX Design</li>
+        <li>HTML structure</li>
+    </ol>
+     <!--type="a" sắp xếp thep thứ tự A,B,C,D-->
+     <h2>Lesson4</h2>
+    <ol  type="I">
+        <li>Overview:Internet</li>
+        <li>VScode and Github</li>
+        <li>UI/UX Design</li>
+        <li>HTML structure</li>
+        <!--type="a" sắp xếp thep thứ tự I,II,III,iv-->
+    </ol>
+    <h2>Projects</h2>
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>Project Name</th>
+            <th>Complete Date</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Portfolio Page</td>
+            <td>9/11/2021</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Cat City Registration</td>
+            <td>11/11/2021</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Twitter Page</td>
+            <td>16/11/2021</td>
+        </tr>
+    </table>
+    
+
+</body>
+</html>
