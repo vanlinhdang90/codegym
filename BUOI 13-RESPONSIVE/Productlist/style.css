@@ -1,0 +1,88 @@
+img{
+    width: 100%;
+    height: 180px;
+}
+body>div{
+    float: left;
+     width: 16%;
+    /* margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2px;
+    margin-bottom: 2px; */ 
+    margin: 20px 2% 28px 2%;
+    transition-duration: 1.5s;
+    opacity: 0.9;
+}
+/* opacity: chỉnh độ mờ div dùng : sản phẩm hết hàng, chuẩn bị tung hàng, mờ đi khi hover chính độ mờ lên 1 để tạo hiệu ứng làm rõ sản phẩm */
+/* body > div => chỉ áp dụng cho các div là con của body, dưới body 1 cấp, các thẻ div cấp 2 ko có hiệu lực */
+/* margin: trên phải dưới trái theo chiều kim đồng hồ */
+/* transtin-duration-> thời gian thay đổi hiệu hứng css khi rê chuột */
+h1{
+    text-align: center;
+}
+h1+div{
+    background-color: aquamarine;
+}
+/* h1+div -> chọn thẻ div gần thẻ h1 , thể div dầu tiên gần h1 */
+h1~div{
+background-color: aquamarine;
+}
+/* áp dụng tất cả thẻ div dưới h1 */
+body>div:hover{
+    background-color: yellow;
+    opacity: 1;
+}
+/* hiển thị độ mờ khi rê chuột vào sản phẩm */
+p:first-child{
+    color: tomato;
+    font-weight: bold;
+    font-size:18px;
+    font-style: oblique;
+}
+p:last-child{
+    color: blue;
+    text-decoration:underline;
+    
+}
+/* https://www.w3schools.com/css/css_pseudo_classes.asp */
+p{
+    text-align: center;
+}
+p:hover{
+    font-size: 20px;
+}
+@media screen and (max-width:1000px) and (min-width:700px)
+{
+
+body{
+    background-color: yellow;
+}
+body > div {
+opacity: 1.0;
+width: 29%; 
+margin: 20px 1.5% 20px 1.5%;
+height: 400px;
+}
+p{
+  font-size: 14px;
+  padding-left: 10px;
+  margin: 0;
+}
+}
+
+@media screen and (max-width: 699px) {
+    body{
+        background-color: yellow;
+    }
+    body > div {
+    opacity: 1.0;
+    width: 45%; 
+    margin: 20px 2.5% 20px 2.5%;
+    height: 400px;
+    }
+    p{
+      font-size: 36px;
+      padding-left: 10px;
+      margin: 0;
+    }
+}
