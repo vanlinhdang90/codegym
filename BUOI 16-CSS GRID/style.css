@@ -1,0 +1,73 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+}
+div{
+    font-size: 36px;
+    color: white;
+    font-weight: bold;
+}
+h1{
+    display: block;
+    margin: auto;
+}
+.container {
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    background-color: turquoise;
+    display: grid;
+    /* grid-template-columns: auto 3fr 1fr 20px 10%; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 300px 3fr;
+/* setup dong va cot trong grid */
+    /* grid-column-gap: 20px;
+    grid-row-gap: 10px; */
+    grid-gap: 10px 20px;
+    /* khoang cach giua dong va cot */
+    justify-items: stretch;
+    align-self: stretch;
+    /* canh chinh tat ca item trong contaner */
+    grid-template-areas:
+    "header header header"
+    "ads content sidebar"
+    "footer footer footer ";
+}
+
+#item-1 {
+    background-color: darkmagenta;
+    grid-area:header;
+    /* justify-self: start; */
+    /* canh chinh kich thuoc element theo chieu ngang */
+    /* align-self: end; */
+    /* thu nho chieu cao bang kich thuoc element */
+    /* justify-self: center; */
+
+    /* can chinh elemen ra giua */
+}
+#item-2 {
+    background-color:green;
+    grid-area:ads ;
+}
+
+#item-3 {
+    background-color: yellow;
+    grid-area: content;
+
+}
+
+#item-4 {
+    background-color: maroon;
+    grid-area: sidebar;
+}
+
+#item-5 {
+    background-color: mediumblue;
+    grid-area: footer;
+    /* grid-column: 2/4;
+    grid-row:2/4; */
+}
