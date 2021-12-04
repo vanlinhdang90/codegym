@@ -1,0 +1,66 @@
+html, body{
+    width: 1000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    background-color: chocolate;
+    display: grid;
+    grid-template-areas: 
+    "i1 i2 i2 i3 i4"
+    "i5 i2 i2 i3 i6"
+    "i7 i8 i9 i3 i10"
+    "i11 i11 i11 i3 i12";    
+    grid-template-columns: 2fr 1fr 2fr 4fr 2fr ;
+    grid-template-rows:2fr 2fr 2fr 2fr ;
+}
+
+
+
+#item-1{
+    background-color:chartreuse;
+    grid-area: i1;
+}
+#item-2{
+    background-color:cornflowerblue;
+    grid-area: i2;
+}
+#item-3{
+    background-color: rosybrown;
+    grid-area: i3;
+}
+#item-4{
+    background-color: darkorchid;
+    grid-area: i4;
+}
+#item-5{
+    background-color:darkturquoise;
+    grid-area: i5;
+}
+#item-6{
+    background-color:aquamarine;
+    grid-area: i6;
+}
+#item-7{
+    background-color:beige;
+    grid-area: i7;
+}
+#item-8{
+    background-color:blue;
+    grid-area: i8;
+}
+#item-9{
+    background-color:brown;
+    grid-area: i9;
+}
+#item-10{
+    background-color:crimson;
+    grid-area:i10;
+}
+#item-11{
+    background-color:dimgrey;
+    grid-area:i11;
+}
+#item-12{
+    background-color:gold;
+    grid-area:i12;
+}

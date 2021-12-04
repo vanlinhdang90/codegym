@@ -1,0 +1,81 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    width:300px;
+    margin: auto;
+}
+div{
+    font-size: 36px;
+    font-weight:bold;
+}
+#flex-container{
+    width: 40%;
+    height: 70%; 
+    margin-top: 50px;
+    background-color: salmon;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+    /* flex-direction: colum sắp theo cột giới hạn trong container 
+    flex-direction{ row-reverse: đảo ngược thứ tự theo dòng
+    */
+    /* main-axis: CANH CHỈNH TRỤC CHÍNH */
+    justify-content: center;
+    /* justify-content:
+     flex-start" ngay đầu div cha
+     flex-end: đặt cuối div cha
+     space-between: đây các element cách đều nhau
+     space-around: cách đều và cách viền cạnh div cha
+     space-evenly: canh đều
+     center
+     stretch
+    ; */
+     align-items: center;
+    /* CROSS-AXIS */
+    /* align-items:
+    center: giua truc doc
+    
+    ; */
+    flex-wrap:wrap;
+    /* wrap: khi kichs thuoc element vuot qua div cha->goi gon element trong khong gian div cha, di chuyen element sang dong moi
+    wrap-reverse: dua element xuong dong va xep theo chieu nguoc lai
+    nowrap: khong dua xuong dong moi, don lai 1 dong
+     */
+}
+#item-1{
+    width: 10%;
+    height: 50%;
+    background-color: seagreen;
+    order:3;
+    flex-shrink:2;
+    flex-grow: 1;
+    align-self: flex-end;
+    
+}
+#item-2{
+    width: 10%;
+    height: 50%;
+    background-color: sienna;
+    order:1;
+    flex-shrink:1;
+    /* flex-shrink:flex-shrink: 1 uu tien giu khong gian truoc
+    2: uu tien sau, co the cat xen cho du khong gian cha; */
+    flex-grow: 2;
+    align-self: flex-start;
+    /* canh chieu doc rieng cho 1 item, khong lien qua item khac */
+}
+#item-3{
+    width: 10%;
+    height: 50%;
+    background-color:slateblue;
+    order: 2;
+    /* order: sắp xếp vị trí item hiển thị */
+    flex-shrink:2;
+    flex-grow: 5;
+    /* flexgrow: so phan chiem tren chieu ngang */
+}
